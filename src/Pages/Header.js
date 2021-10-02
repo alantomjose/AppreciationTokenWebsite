@@ -13,7 +13,8 @@ export default function Header() {
   return (
     <div
       style={{
-        backgroundImage: `url(${bg})`,
+        // backgroundImage: `linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%)`,
+        backgroundImage: "linear-gradient(to top, #a8edea 0%, #fed6e3 100%)",
         backgroundSize: "100%",
         backgroundRepeat: "repeat-y",
         fontFamily: "Open Sans",
@@ -27,15 +28,18 @@ export default function Header() {
               <div className="pt-32 sm:pt-0">
                 <h2 className="font-semibold text-6xl text-gray-700  ">
                   Send an{" "}
-                  <span className="text-rose-700"> Appreciation Token </span>{" "}
+                  <span className="text-lightBlue-600">
+                    {" "}
+                    Appreciation Token{" "}
+                  </span>{" "}
                   and show the community how much you appreciate them!
                 </h2>
 
-                <div className="mt-12">
+                <div className="mt-12 mx-4">
                   <a
                     href="https://www.creative-tim.com/learning-lab/tailwind/react/overview/notus?ref=nr-index"
                     target="_blank"
-                    className="get-started text-white font-bold px-6 py-4 rounded-full outline-none focus:outline-none mr-1 mb-1 bg-gradient-to-br from-rose-500 to-rose-800  active:bg-lightBlue-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
+                    className="get-started text-white font-bold px-6 py-4 rounded-sm outline-none focus:outline-none mr-6 mb-1 bg-gradient-to-br from-blue-500 to-indigo-800  active:bg-lightBlue-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
                   >
                     Learn More
                   </a>

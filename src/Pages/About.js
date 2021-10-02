@@ -39,8 +39,11 @@ export default function About() {
                 Why Send An Appreciation Token?
               </h2>
               <p className="text-lg leading-relaxed mt-4 mb-4 text-blueGray-500">
-                Beacuse its awesomeBeacuse its awesomeBeacuse its awesomeBeacuse
-                its awesomeBeacuse its awesomeBeacuse its awesome
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pellentesque feugiat est a orci pellentesque fermentum. Praesent
+                pharetra, mauris a tristique volutpat, tortor sem molestie eros,
+                venenatis condimentum dui est maximus nibh. Aenean nulla nisl,
+                semper in hendrerit quis, lobortis ultrices eros.
               </p>
             </div>
           </div>

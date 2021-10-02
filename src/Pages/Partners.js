@@ -21,10 +21,10 @@ export default function Partners() {
 
   return (
     <>
-      <div>
-        <div className="w-full md:px-4 pb-20">
-          <h2 className=" uppercase text-4xl text-gray-700 text-center ">
-            Our Partners
+      <div className="m-20">
+        <div className="w-full md:px-4 pb-20" style={{ fontFamily: "Poppins" }}>
+          <h2 className=" uppercase  font-bold text-4xl text-gray-800 text-center ">
+            Partners
           </h2>
         </div>
         <Slider {...settings}>
