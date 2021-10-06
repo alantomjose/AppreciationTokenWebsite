@@ -20,7 +20,7 @@ export default function Partners() {
   };
 
   return (
-    <>
+    <div className = "font-sans">
       <div className="m-20">
         <div className="w-full md:px-4 pb-20" style={{ fontFamily: "Poppins" }}>
           <h2 className=" uppercase  font-bold text-4xl text-gray-800 text-center ">
@@ -48,6 +48,6 @@ export default function Partners() {
           </div>
         </Slider>
       </div>
-    </>
+    </div>
   );
 }

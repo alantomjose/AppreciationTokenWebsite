@@ -11,53 +11,42 @@ export default function Features() {
     <>
       {/* <IndexNavbar fixed /> */}
 
-      <section className="mt-12 relative   " style={{ fontFamily: "Poppins" }}>
-        <div className="container mx-auto">
-          <div className="justify-center text-center flex flex-wrap mt-24">
-            <div className="flex">
-              <div className=" mr-12 w-4/12 text-left  ">
-                <div className="text-xl uppercase font-extrabold text-gray-400">
-                  feature
-                </div>
-                <div className="text-7xl font-bold text-gray-800">
-                  Powerful Integration
-                </div>
-                <div className="text-xl mr-12  text-left text-gray-500 mt-6 ">
-                  Powerful Integration with all prominent blockchain
-                  technologies
-                </div>
+    <section class="bg-white border-b py-8 font-sans">
+      <div class="container max-w-5xl mx-auto m-8 flex flex-wrap">
+        <h1 class="w-full my-2 text-4xl font-bold leading-tight text-center text-gray-800">
+          Features
+        </h1>
+        <div class="w-full mb-4">
+          <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+        </div>
+        <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink">
+          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+              <div class="w-full font-bold text-xl text-gray-800 p-6">
+                Powerful Integration
               </div>
-
-              <div className="w-6/12 relative ml-auto ">
-                <img className=" -mt-20" src={integration} />
-              </div>
-            </div>
-          </div>
-
-          <div className="justify-center text-center flex flex-wrap mt-24">
-            <div className="flex">
-              <div className="w-6/12 relative  p-36 ">
-                <img
-                  className="  rounded-3xl  shadow-2xl -mt-20"
-                  src={nftcomics}
-                />
-              </div>
-              <div className=" mr-12 w-4/12 text-left pt-20  ">
-                <div className="text-xl uppercase font-extrabold text-gray-400">
-                  feature
-                </div>
-                <div className="text-7xl font-bold text-gray-800">
-                  Customized Smart Contracts
-                </div>
-                <div className="text-xl mr-12  text-left text-gray-500 mt-6 ">
-                  Powerful Integration with all prominent blockchain
-                  technologies
-                </div>
-              </div>
-            </div>
+              <p class="text-gray-800 text-base px-6 mb-5">
+                Powerful integration with all prominent blockchain technologies
+              </p>
+              <img src = {integration}/>
+            </a>
           </div>
         </div>
-      </section>
+        <div class="w-full md:w-1/2 p-6 flex flex-col flex-grow flex-shrink">
+          <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
+            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+              <div class="w-full font-bold text-xl text-gray-800 p-6">
+                Customized Smart Contracts
+              </div>
+              <p class="text-gray-800 text-base px-6 mb-5">
+                Powerful integration with all prominent blockchain technologies
+              </p>
+              <img src = {nftcomics}/>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
     </>
   );
 }

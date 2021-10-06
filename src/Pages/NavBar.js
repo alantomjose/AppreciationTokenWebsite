@@ -29,7 +29,7 @@ export default function Navbar(props) {
   }, [location]);
 
   const changeNavbarColor = () => {
-    if (window.scrollY >= 300) {
+    if (window.scrollY >= 5) {
       setNavColor(true);
     } else {
       setNavColor(false);
@@ -39,19 +39,18 @@ export default function Navbar(props) {
   window.addEventListener("scroll", changeNavbarColor);
 
   return (
-    <>
+    <div className = "font-sans">
       <nav
         className={`top-0 fixed z-50 w-full flex flex-wrap items-center justify-between px-2 py-4 navbar-expand-lg ease-in-out transition-all ${
-          !navColor ? ` ` : `bg-white shadow `
+          !navColor ? `transparent text-white` : `bg-white shadow text-black`
         }   `}
-        style={{ fontFamily: "Poppins" }}
       >
         <div
           // style={{ fontFamily: "Allan" }}
-          className="container px-4 mx-auto flex flex-wrap items-center justify-between"
+          className="container text-3xl px-4 mx-auto flex flex-wrap items-center justify-between"
         >
-          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start text-blueGray-800 font-semibold text-lg">
-            <p> Appreciation Token</p>
+          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start font-semibold text-lg">
+            <p>Appreciation Token</p>
 
             <button
               className="cursor-pointer text-xl leading-none px-3 py-1  block lg:hidden outline-none focus:outline-none text-white"
@@ -87,7 +86,7 @@ export default function Navbar(props) {
             >
               <li className="flex items-center">
                 <Link to="/">
-                  <p className="text-gray-800 text-lg   mt-20 md:mt-0 mb-10 lg:mb-0 mx-5 translate-y-20">
+                  <p className="text-lg   mt-20 md:mt-0 mb-10 lg:mb-0 mx-5 translate-y-20">
                     Home
                   </p>
                 </Link>
@@ -95,7 +94,7 @@ export default function Navbar(props) {
 
               <li className="flex items-center">
                 <Link to="/#about">
-                  <p className="text-gray-800 text-lg   mb-10 lg:mb-0 mx-5">
+                  <p className="text-lg   mb-10 lg:mb-0 mx-5">
                     About
                   </p>
                 </Link>
@@ -103,7 +102,7 @@ export default function Navbar(props) {
 
               <li className="flex items-center">
                 <Link to="/#roadmap">
-                  <p className="text-gray-800 text-lg   mb-10 lg:mb-0 mx-5">
+                  <p className="text-lg   mb-10 lg:mb-0 mx-5">
                     Testimonials
                   </p>
                 </Link>
@@ -111,7 +110,7 @@ export default function Navbar(props) {
 
               <li className="flex items-center">
                 <Link to="/#team">
-                  <p className="text-gray-800 text-lg   mb-10 lg:mb-0 mx-5">
+                  <p className="text-lg   mb-10 lg:mb-0 mx-5">
                     Contact
                   </p>
                 </Link>
@@ -123,6 +122,6 @@ export default function Navbar(props) {
           </div>
         </div>
       </nav>
-    </>
+    </div>
   );
 }

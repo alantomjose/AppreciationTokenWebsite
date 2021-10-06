@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // import IndexNavbar from "../components/Navbars/IndexNavbar.js";
-import Footer from "../components/Footers/Footer.js";
+import Footer from "./Footer.js";
 import Navbar from "../Pages/NavBar";
 import About from "./About.js";
 import Header from "./Header";
@@ -19,10 +19,10 @@ export default function Home() {
       <Navbar />
       <Header />
       <About2 />
+      <About/>
       <Features />
       <Testimonials />
       <Partners />
-
       <Footer />
     </div>
   );
